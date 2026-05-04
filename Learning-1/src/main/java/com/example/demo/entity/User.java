@@ -13,6 +13,30 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class User {
+  public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Department getDept() {
+		return dept;
+	}
+
+	public void setDept(Department dept) {
+		this.dept = dept;
+	}
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
